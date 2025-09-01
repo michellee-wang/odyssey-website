@@ -145,7 +145,6 @@ body {
 .wavy-parchment-container {
   position: relative; /* This is crucial for layering */
   z-index: 1;
-  padding: 4em; /* As requested */
 }
 
 .lowercase {

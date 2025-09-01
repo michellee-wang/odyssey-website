@@ -64,14 +64,14 @@ const PastEventsCarousel = () => {
       <div ref={scrollRef} className="flex space-x-8 overflow-x-auto p-4 scrollbar-hide">
         {events.map((event, index) => {
           const content = (
-            <div className="relative z-10 flex flex-col h-full justify-between p-6">
+            <div className="relative z-10 flex flex-col h-full justify-between p-4 sm:p-6">
               <div>
-                <div className="text-5xl mb-4 text-white">{event.name.split(' ')[1]}</div>
-                <h3 className="text-2xl font-bold mb-3 text-white">{event.name.split(' ')[0]}</h3>
+                <div className="text-3xl sm:text-5xl mb-4 text-white">{event.name.split(' ')[1]}</div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 text-white">{event.name.split(' ')[0]}</h3>
               </div>
               <div>
-                <p className="text-base font-semibold text-white">{event.date}</p>
-                <p className="text-base text-white">{event.location}</p>
+                <p className="text-sm sm:text-base font-semibold text-white">{event.date}</p>
+                <p className="text-sm sm:text-base text-white">{event.location}</p>
                 {event.link && (
                   <div className="text-center mt-4">
                     <span className="text-xs font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Visit Site →</span>
@@ -88,7 +88,7 @@ const PastEventsCarousel = () => {
                 href={event.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative w-64 h-80 flex-shrink-0 rounded-lg border-2 border-amber-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden"
+                className="group relative w-56 sm:w-64 h-80 flex-shrink-0 rounded-lg border-2 border-amber-600 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl overflow-hidden"
               >
                 <Image
                   src={event.imageSrc}
@@ -106,7 +106,7 @@ const PastEventsCarousel = () => {
           return (
             <div
               key={index}
-              className="group relative w-64 h-80 flex-shrink-0 rounded-lg border-2 border-amber-600 transition-all duration-300 overflow-hidden"
+              className="group relative w-56 sm:w-64 h-80 flex-shrink-0 rounded-lg border-2 border-amber-600 transition-all duration-300 overflow-hidden"
             >
               <Image
                 src={event.imageSrc}
