@@ -1,26 +1,169 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #8DA8DD;
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-fredoka);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #8DA8DD;
     --foreground: #ededed;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+/* Treasure Map Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+@keyframes drift {
+  0% { transform: translateX(0px) translateY(0px); }
+  33% { transform: translateX(15px) translateY(-5px); }
+  66% { transform: translateX(-10px) translateY(5px); }
+  100% { transform: translateX(0px) translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-drift {
+  animation: drift 8s ease-in-out infinite;
+}
+
+/* Radial gradient for mystical glow */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* Treasure Map Specific Styles */
+.sepia {
+  filter: sepia(20%) saturate(120%);
+}
+
+@keyframes treasure-glow {
+  0%, 100% { 
+    text-shadow: 0 0 5px #fbbf24, 0 0 10px #f59e0b, 0 0 15px #d97706;
+    transform: scale(1);
+  }
+  50% { 
+    text-shadow: 0 0 10px #fbbf24, 0 0 20px #f59e0b, 0 0 30px #d97706;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes parchment-flutter {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(0.5deg) scale(1.01); }
+  75% { transform: rotate(-0.5deg) scale(0.99); }
+}
+
+.animate-treasure-glow {
+  animation: treasure-glow 3s ease-in-out infinite;
+}
+
+.animate-parchment-flutter {
+  animation: parchment-flutter 6s ease-in-out infinite;
+}
+
+/* Aged paper texture */
+.aged-paper {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(139, 69, 19, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 80% 50%, rgba(160, 82, 45, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 40% 20%, rgba(205, 133, 63, 0.05) 1px, transparent 1px),
+    radial-gradient(circle at 60% 80%, rgba(139, 69, 19, 0.08) 1px, transparent 1px);
+  background-size: 60px 60px, 40px 40px, 30px 30px, 50px 50px;
+}
+
+/* Scroll Animations */
+@keyframes scroll-unfurl {
+  0% { 
+    transform: rotateX(45deg) scale(0.8);
+    opacity: 0.6;
+  }
+  100% { 
+    transform: rotateX(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes ribbon-wave {
+  0%, 100% { transform: rotate(-12deg) scaleY(1); }
+  50% { transform: rotate(-8deg) scaleY(1.1); }
+}
+
+.scroll-container {
+  animation: scroll-unfurl 0.8s ease-out;
+}
+
+.ribbon-tie {
+  animation: ribbon-wave 4s ease-in-out infinite;
+}
+
+/* Scroll shadows for depth */
+.scroll-shadow {
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.3),
+    0 5px 15px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Wavy Parchment Effect Container */
+.wavy-parchment-container {
+  position: relative; /* This is crucial for layering */
+  z-index: 1;
+  padding: 4em; /* As requested */
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* The wavy background layer (applied via pseudo-element) */
+.wavy-parchment-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Places it behind the content */
+  
+  /* Your requested styling for the parchment */
+  background: #fffef0;
+  box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+  filter: url(#wavy2);
 }

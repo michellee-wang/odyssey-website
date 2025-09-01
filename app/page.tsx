@@ -2,102 +2,200 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+    <div className="min-h-screen relative overflow-hidden lowercase">
+      
+      {/* Navigation Bar - Treasure Map Style */}
+      <nav className="fixed top-0 right-0 z-50 flex justify-end items-center px-8 py-4">
+        <div className="flex gap-6 text-amber-900 font-bold text-xl bg-amber-50 bg-opacity-90 px-8 py-4 rounded-lg shadow-xl border-2 border-amber-800 transform -rotate-1 backdrop-blur-sm">
+          <a href="#chart-course" className="hover:text-red-700 transition-colors flex items-center gap-2 font-serif">
+            <span>🗺️</span> Chart Course
           </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+          <a href="#past-expeditions" className="hover:text-red-700 transition-colors flex items-center gap-2 font-serif">
+            <span>⚓</span> Past Expeditions
+          </a>
+          <a href="#navigator-guide" className="hover:text-red-700 transition-colors flex items-center gap-2 font-serif">
+            <span>🧭</span> Navigator's Guide
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      </nav>
+
+      {/* --- Single Scroll Section --- */}
+      <section id="main-scroll" className="relative z-10 flex items-center justify-center px-8 pb-24">
+        <div className="max-w-7xl mx-auto text-center">
+          {/* Scroll Container */}
+          <div className="relative pt-10">
+            
+            
+            
+
+
+            {/* Scroll Parchment */}
+            <div className="relative wavy-parchment-container px-16 pb-16 pt-0">
+              
+              {/* --- Combined Content --- */}
+              <div className="text-amber-900 font-serif space-y-16 text-center">
+
+                {/* --- Hero Logo Section (No Border) --- */}
+                <div className="relative">
+                  {/* Logo and Text */}
+                  <div className="text-center">
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+                      src="/odysseyLogo.png"
+                      alt="Odyssey Logo"
+                      width={2000}
+                      height={1000}
+                      className="mx-auto drop-shadow-xl sepia contrast-110 max-w-full h-auto"
+                      priority
+                    />
+                    <div className="mt-8 text-blue-900 text-3xl font-bold tracking-wider font-serif">
+                      ⚓ october 2nd, 2025 ⚓
+                    </div>
+                    <div className="mt-4 text-blue-800 text-xl italic font-serif border-t-2 border-amber-700 pt-4 max-w-lg mx-auto">
+                      presented by hack club & the athena initiative
+                    </div>
+                    <div className="mt-2 text-cyan-700 text-sm font-serif">
+                      ~ Mark well these coordinates of the greatest treasure ~
+                    </div>
+                  </div>
+
+                  {/* Floating Map Annotations */}
+                  <div className="absolute top-0 -left-24 transform -rotate-12 text-amber-800 font-serif italic text-sm bg-amber-50 px-2 py-1 border border-amber-600 rounded opacity-80">
+                    "Beware the Kraken!"
+                  </div>
+                  
+                  <div className="absolute bottom-0 -right-24 transform rotate-6 text-amber-800 font-serif italic text-sm bg-amber-50 px-2 py-1 border border-amber-600 rounded opacity-80">
+                    "X marks ye spot"
+                  </div>
+                </div>
+
+                <hr className="border-t-4 border-dashed border-amber-800 opacity-50 my-12" />
+
+                {/* --- Chart Your Course Content --- */}
+                <div id="chart-course">
+                  <h2 className="text-4xl font-bold mb-6 text-amber-900">🗺️ Chart Your Course</h2>
+                  <p className="text-xl mb-8 leading-relaxed">
+                    Ready to embark on an odyssey like no other? Register now and become part of our legendary crew. 
+                    Your journey of discovery awaits across the vast seas of Los Angeles.
+                  </p>
+                  <div className="bg-white bg-opacity-80 rounded-lg p-8 border-2 border-amber-600 mb-6">
+                    <h3 className="text-2xl font-bold mb-4 text-blue-800">Registration Details</h3>
+                    <div className="grid md:grid-cols-2 gap-6 text-left">
+                      <div>
+                        <h4 className="font-bold text-lg mb-2">📅 When:</h4>
+                        <p>Applications open year-round</p>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-lg mb-2">📍 Where:</h4>
+                        <p>Los Angeles, California</p>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-lg mb-2">💰 Cost:</h4>
+                        <p>Adventure packages available</p>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-lg mb-2">👥 Who:</h4>
+                        <p>All brave souls welcome</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button className="bg-red-700 text-white px-8 py-4 rounded-lg font-bold text-xl hover:bg-red-800 transition-colors shadow-lg transform hover:scale-105">
+                    ⚓ Register Now
+                  </button>
+                </div>
+
+                <hr className="border-t-4 border-dashed border-amber-800 opacity-50 my-12" />
+
+                {/* --- Past Expeditions Content --- */}
+                <div id="past-expeditions">
+                  <h2 className="text-4xl font-bold mb-6 text-blue-900">⚓ Past Expeditions</h2>
+                  <p className="text-xl mb-8 leading-relaxed">
+                    Behold the legendary voyages of those who came before. Each expedition a story of courage, 
+                    discovery, and adventure.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-6 mb-8">
+                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600">
+                      <div className="text-4xl mb-4">🏴‍☠️</div>
+                      <h3 className="text-xl font-bold mb-3 text-blue-800">The Great Harbor Quest</h3>
+                      <p className="text-sm">A legendary voyage through Santa Monica's hidden treasures.</p>
+                    </div>
+                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600">
+                      <div className="text-4xl mb-4">🗺️</div>
+                      <h3 className="text-xl font-bold mb-3 text-blue-800">The Downtown Odyssey</h3>
+                      <p className="text-sm">Brave souls navigated the urban jungle, uncovering mysteries.</p>
+                    </div>
+                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600">
+                      <div className="text-4xl mb-4">🧭</div>
+                      <h3 className="text-xl font-bold mb-3 text-blue-800">The Coastal Expedition</h3>
+                      <p className="text-sm">A perilous journey along the Pacific shores.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <hr className="border-t-4 border-dashed border-amber-800 opacity-50 my-12" />
+
+                {/* --- Navigator's Guide Content --- */}
+                <div id="navigator-guide" className="text-left">
+                  <h2 className="text-4xl font-bold mb-6 text-green-900 text-center">🧭 Frequently Asked Questions</h2>
+                  <p className="text-xl mb-12 leading-relaxed text-center">
+                    Words of wisdom from the captain's log & everything you need to know before attending.
+                  </p>
+                  
+                  <div className="space-y-8 max-w-4xl mx-auto">
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">What's a Hackathon?</h3>
+                      <p className="text-lg text-amber-900 leading-relaxed">
+                        Odyssey is a social coding event run by Hack Club's Athena intiative. You'll spend the day learning, coding, and creating with support from mentors, workshops, and plenty of food and swag. No experience? No problem!
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">Who can attend?</h3>
+                      <p className="text-lg text-amber-900 leading-relaxed">
+                        Odyssey is open to all local individuals in Los Angeles excited to learn and build, no matter their experience level.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">What if I've never coded before?</h3>
+                      <p className="text-lg text-amber-900 leading-relaxed">
+                        Come join us! We have beginner-friendly workshops, mentors, and plenty of support to help you get started.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">What should I bring?</h3>
+                      <p className="text-lg text-amber-900 leading-relaxed">
+                        A laptop, its charger, and your excitement to learn! Food, drinks, and swag will be provided.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">Have another question?</h3>
+                      <p className="text-lg text-amber-900 leading-relaxed">
+                        You can email us any time at <a href="mailto:elia@hackclub.com" className="font-bold underline hover:text-blue-800">elia@hackclub.com</a>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Torn Paper Edges */}
+      <div className="absolute top-0 left-0 right-0 h-8 bg-gradient-to-b from-transparent to-amber-100 opacity-60" style={{
+        clipPath: 'polygon(0 0, 100% 0, 95% 100%, 90% 80%, 85% 100%, 80% 60%, 75% 100%, 70% 70%, 65% 100%, 60% 80%, 55% 100%, 50% 90%, 45% 100%, 40% 75%, 35% 100%, 30% 85%, 25% 100%, 20% 70%, 15% 100%, 10% 80%, 5% 100%, 0% 85%)'
+      }}></div>
+      
+      <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-transparent to-amber-100 opacity-60" style={{
+        clipPath: 'polygon(0 100%, 5% 0%, 10% 80%, 15% 0%, 20% 70%, 25% 0%, 30% 85%, 35% 0%, 40% 75%, 45% 0%, 50% 90%, 55% 0%, 60% 80%, 65% 0%, 70% 70%, 75% 0%, 80% 60%, 85% 0%, 90% 80%, 95% 0%, 100% 100%)'
+      }}></div>
+
+      {/* SVG Filter for Wavy Parchment Effect */}
+      <svg className="absolute w-0 h-0">
+        <filter id="wavy2">
+          <feTurbulence x="0" y="0" baseFrequency="0.02" numOctaves="5" seed="1"></feTurbulence>
+          <feDisplacementMap in="SourceGraphic" scale="20" />
+        </filter>
+      </svg>
     </div>
   );
 }
