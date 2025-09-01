@@ -51,7 +51,7 @@ export default function Home() {
                       ⚓ october 2nd, 2025 ⚓
                     </div>
                     <div className="mt-4 text-blue-800 text-xl italic font-serif border-t-2 border-amber-700 pt-4 max-w-lg mx-auto">
-                      presented by hack club & the athena initiative
+                      "here lies the greatest treasure..."
                     </div>
                     <div className="mt-2 text-cyan-700 text-sm font-serif">
                       ~ Mark well these coordinates of the greatest treasure ~
@@ -72,7 +72,9 @@ export default function Home() {
 
                 {/* --- Chart Your Course Content --- */}
                 <div id="chart-course">
-                  <h2 className="text-4xl font-bold mb-6 text-amber-900">🗺️ Chart Your Course</h2>
+                  <h2 className="text-4xl font-bold mb-6 text-amber-900">
+                    🗺️ chart your course
+                  </h2>
                   <p className="text-xl mb-8 leading-relaxed">
                     Ready to embark on an odyssey like no other? Register now and become part of our legendary crew. 
                     Your journey of discovery awaits across the vast seas of Los Angeles.
@@ -107,7 +109,9 @@ export default function Home() {
 
                 {/* --- Past Expeditions Content --- */}
                 <div id="past-expeditions">
-                  <h2 className="text-4xl font-bold mb-6 text-blue-900">⚓ Past Expeditions</h2>
+                  <h2 className="text-4xl font-bold mb-6 text-blue-900">
+                    ⚓ past expeditions
+                  </h2>
                   <p className="text-xl mb-8 leading-relaxed">
                     Behold the legendary voyages of those who came before. Each expedition a story of courage, 
                     discovery, and adventure.
@@ -135,7 +139,9 @@ export default function Home() {
 
                 {/* --- Navigator's Guide Content --- */}
                 <div id="navigator-guide" className="text-left">
-                  <h2 className="text-4xl font-bold mb-6 text-green-900 text-center">🧭 Frequently Asked Questions</h2>
+                  <h2 className="text-4xl font-bold mb-6 text-green-900 text-center">
+                    🧭 navigator's guide
+                  </h2>
                   <p className="text-xl mb-12 leading-relaxed text-center">
                     Words of wisdom from the captain's log & everything you need to know before attending.
                   </p>
