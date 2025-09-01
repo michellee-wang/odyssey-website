@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Fredoka } from "next/font/google";
+import { IM_Fell_English_SC } from "next/font/google";
 import "./globals.css";
 
-const fredoka = Fredoka({
-  variable: "--font-fredoka",
+const imFell = IM_Fell_English_SC({
+  variable: "--font-im-fell",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${fredoka.variable} antialiased`}
+        className={`${imFell.variable} antialiased`}
       >
         {children}
       </body>
