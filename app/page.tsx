@@ -60,7 +60,7 @@ export default function Home() {
                       ⚓ october 2nd, 2025 ⚓
                     </div>
                     <div className="mt-4 text-blue-800 text-base sm:text-lg md:text-xl italic font-serif border-t-2 border-amber-700 pt-4 max-w-lg mx-auto">
-                      by hack club's athena initiative
+                      by hack club&apos;s athena initiative
                     </div>
                     <div className="mt-2 text-cyan-700 text-sm font-serif">
                       ~ Mark well these coordinates of the greatest treasure ~
@@ -69,11 +69,11 @@ export default function Home() {
 
                   {/* Floating Map Annotations */}
                   <div className="absolute top-8 -left-24 transform -rotate-12 text-amber-800 font-serif italic text-sm bg-amber-50 px-2 py-1 border border-amber-600 rounded opacity-80 hidden md:block">
-                    "Beware the Kraken!"
+                    &quot;Beware the Kraken!&quot;
                   </div>
                   
                   <div className="absolute bottom-0 -right-24 transform rotate-6 text-amber-800 font-serif italic text-sm bg-amber-50 px-2 py-1 border border-amber-600 rounded opacity-80 hidden md:block">
-                    "X marks ye spot"
+                    &quot;X marks ye spot&quot;
                   </div>
                 </div>
 
@@ -137,7 +137,7 @@ export default function Home() {
                         Built for beginners learning to code, girls are supported by experienced Hack Clubbers. By the end of the day, every single participant builds something with code. In 2023, Athena events were run in 6 cities, and in 2024 there were more than 10 cities.
                       </p>
                       <blockquote className="mt-4 border-l-4 border-amber-700 pl-4 italic text-amber-800 text-sm sm:text-base">
-                        "There were two amazing aspects to this event: 1) Girls are being taught by other girls, and I believe that when girls see it, they can be it. 2) Most of the time our girls are learning foundational coding, but in this experience, we saw the girls taking an opportunity to incorporate their creative voice within their projects.”
+                        &quot;There were two amazing aspects to this event: 1) Girls are being taught by other girls, and I believe that when girls see it, they can be it. 2) Most of the time our girls are learning foundational coding, but in this experience, we saw the girls taking an opportunity to incorporate their creative voice within their projects.”
                       </blockquote>
                     </div>
                   </div>
@@ -162,17 +162,17 @@ export default function Home() {
                 {/* --- Navigator's Guide Content --- */}
                 <div id="faq" className="text-left">
                   <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-green-900 text-center">
-                    🧭 navigator's guide
+                    🧭 navigator&apos;s guide
                   </h2>
                   <p className="text-base sm:text-lg md:text-xl mb-12 leading-relaxed text-center break-words">
-                    Words of wisdom from the captain's log & everything you need to know before attending.
+                    Words of wisdom from the captain&apos;s log &amp; everything you need to know before attending.
                   </p>
                   
                   <div className="space-y-8 max-w-4xl mx-auto">
                     <div className="transition-transform duration-300 transform hover:translate-x-2">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 text-green-800 font-serif">What's a Hackathon?</h3>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 text-green-800 font-serif">What&apos;s a Hackathon?</h3>
                       <p className="text-base sm:text-lg text-amber-900 leading-relaxed">
-                        Odyssey is a social coding event run by Hack Club's Athena intiative. You'll spend the day learning, coding, and creating with support from mentors, workshops, and plenty of food and swag. No experience? No problem!
+                        Odyssey is a social coding event run by Hack Club&apos;s Athena intiative. You&apos;ll spend the day learning, coding, and creating with support from mentors, workshops, and plenty of food and swag. No experience? No problem!
                       </p>
                     </div>
                     <div className="transition-transform duration-300 transform hover:translate-x-2">
@@ -182,7 +182,7 @@ export default function Home() {
                       </p>
                     </div>
                     <div className="transition-transform duration-300 transform hover:translate-x-2">
-                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 text-green-800 font-serif">What if I've never coded before?</h3>
+                      <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 text-green-800 font-serif">What if I&apos;ve never coded before?</h3>
                       <p className="text-base sm:text-lg text-amber-900 leading-relaxed">
                         Come join us! We have beginner-friendly workshops, mentors, and plenty of support to help you get started.
                       </p>
