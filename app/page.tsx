@@ -26,12 +26,17 @@ export default function Home() {
       <section id="main-scroll" className="relative z-10 flex items-center justify-center px-8 pb-24">
         <div className="max-w-7xl mx-auto text-center">
           {/* Scroll Container */}
-          <div className="relative pt-10">
+          <div className="relative">
+            
+            <Image 
+              src="/flag-orpheus-top.png"
+              alt="Orpheus Flag"
+              width={150}
+              height={150}
+              className="absolute top-0 left-0 z-20"
+            />
             
             
-            
-
-
             {/* Scroll Parchment */}
             <div className="relative wavy-parchment-container px-16 pb-16 pt-0">
               
@@ -62,7 +67,7 @@ export default function Home() {
                   </div>
 
                   {/* Floating Map Annotations */}
-                  <div className="absolute top-0 -left-24 transform -rotate-12 text-amber-800 font-serif italic text-sm bg-amber-50 px-2 py-1 border border-amber-600 rounded opacity-80">
+                  <div className="absolute top-18 -left-24 transform -rotate-12 text-amber-800 font-serif italic text-sm bg-amber-50 px-2 py-1 border border-amber-600 rounded opacity-80">
                     "Beware the Kraken!"
                   </div>
                   
@@ -149,17 +154,17 @@ export default function Home() {
                     discovery, and adventure.
                   </p>
                   <div className="grid md:grid-cols-3 gap-6 mb-8">
-                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600">
+                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
                       <div className="text-4xl mb-4">🏴‍☠️</div>
                       <h3 className="text-xl font-bold mb-3 text-blue-800">The Great Harbor Quest</h3>
                       <p className="text-sm">A legendary voyage through Santa Monica's hidden treasures.</p>
                     </div>
-                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600">
+                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
                       <div className="text-4xl mb-4">🗺️</div>
                       <h3 className="text-xl font-bold mb-3 text-blue-800">The Downtown Odyssey</h3>
                       <p className="text-sm">Brave souls navigated the urban jungle, uncovering mysteries.</p>
                     </div>
-                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600">
+                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
                       <div className="text-4xl mb-4">🧭</div>
                       <h3 className="text-xl font-bold mb-3 text-blue-800">The Coastal Expedition</h3>
                       <p className="text-sm">A perilous journey along the Pacific shores.</p>
@@ -179,31 +184,31 @@ export default function Home() {
                   </p>
                   
                   <div className="space-y-8 max-w-4xl mx-auto">
-                    <div>
+                    <div className="transition-transform duration-300 transform hover:translate-x-2">
                       <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">What's a Hackathon?</h3>
                       <p className="text-lg text-amber-900 leading-relaxed">
                         Odyssey is a social coding event run by Hack Club's Athena intiative. You'll spend the day learning, coding, and creating with support from mentors, workshops, and plenty of food and swag. No experience? No problem!
                       </p>
                     </div>
-                    <div>
+                    <div className="transition-transform duration-300 transform hover:translate-x-2">
                       <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">Who can attend?</h3>
                       <p className="text-lg text-amber-900 leading-relaxed">
                         Odyssey is open to all local girls / non binary teenagers in Los Angeles excited to learn and build, no matter their experience level.
                       </p>
                     </div>
-                    <div>
+                    <div className="transition-transform duration-300 transform hover:translate-x-2">
                       <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">What if I've never coded before?</h3>
                       <p className="text-lg text-amber-900 leading-relaxed">
                         Come join us! We have beginner-friendly workshops, mentors, and plenty of support to help you get started.
                       </p>
                     </div>
-                    <div>
+                    <div className="transition-transform duration-300 transform hover:translate-x-2">
                       <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">What should I bring?</h3>
                       <p className="text-lg text-amber-900 leading-relaxed">
                         A laptop, its charger, and your excitement to learn! Food, drinks, and swag will be provided.
                       </p>
                     </div>
-                    <div>
+                    <div className="transition-transform duration-300 transform hover:translate-x-2">
                       <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">Have another question?</h3>
                       <p className="text-lg text-amber-900 leading-relaxed">
                         You can email us any time at <a href="mailto:elia@hackclub.com" className="font-bold underline hover:text-blue-800">elia@hackclub.com</a>.
