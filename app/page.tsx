@@ -26,7 +26,7 @@ export default function Home() {
       <section id="main-scroll" className="relative z-10 flex items-center justify-center px-8 pb-24">
         <div className="max-w-7xl mx-auto text-center">
           {/* Scroll Container */}
-          <div className="relative">
+          <div className="relative pt-10">
             
             <Image 
               src="/flag-orpheus-top.png"
@@ -67,7 +67,7 @@ export default function Home() {
                   </div>
 
                   {/* Floating Map Annotations */}
-                  <div className="absolute top-18 -left-24 transform -rotate-12 text-amber-800 font-serif italic text-sm bg-amber-50 px-2 py-1 border border-amber-600 rounded opacity-80">
+                  <div className="absolute top-8 -left-24 transform -rotate-12 text-amber-800 font-serif italic text-sm bg-amber-50 px-2 py-1 border border-amber-600 rounded opacity-80">
                     "Beware the Kraken!"
                   </div>
                   
