@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PastEventsCarousel from "./components/PastEventsCarousel";
 
 export default function Home() {
   return (
@@ -153,23 +154,7 @@ export default function Home() {
                     Behold the legendary voyages of those who came before. Each expedition a story of courage, 
                     discovery, and adventure.
                   </p>
-                  <div className="grid md:grid-cols-3 gap-6 mb-8">
-                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-                      <div className="text-4xl mb-4">🏴‍☠️</div>
-                      <h3 className="text-xl font-bold mb-3 text-blue-800">The Great Harbor Quest</h3>
-                      <p className="text-sm">A legendary voyage through Santa Monica's hidden treasures.</p>
-                    </div>
-                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-                      <div className="text-4xl mb-4">🗺️</div>
-                      <h3 className="text-xl font-bold mb-3 text-blue-800">The Downtown Odyssey</h3>
-                      <p className="text-sm">Brave souls navigated the urban jungle, uncovering mysteries.</p>
-                    </div>
-                    <div className="bg-white bg-opacity-80 rounded-lg p-6 border-2 border-amber-600 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl">
-                      <div className="text-4xl mb-4">🧭</div>
-                      <h3 className="text-xl font-bold mb-3 text-blue-800">The Coastal Expedition</h3>
-                      <p className="text-sm">A perilous journey along the Pacific shores.</p>
-                    </div>
-                  </div>
+                  <PastEventsCarousel />
                 </div>
 
                 <hr className="border-t-4 border-dashed border-amber-800 opacity-50 my-12" />
