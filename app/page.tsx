@@ -10,11 +10,14 @@ export default function Home() {
           <a href="#chart-course" className="hover:text-red-700 transition-colors flex items-center gap-2 font-serif">
             <span>🗺️</span> Chart Course
           </a>
+          <a href="#about-guild" className="hover:text-red-700 transition-colors flex items-center gap-2 font-serif">
+            <span>📜</span> The Guild
+          </a>
           <a href="#past-expeditions" className="hover:text-red-700 transition-colors flex items-center gap-2 font-serif">
             <span>⚓</span> Past Expeditions
           </a>
-          <a href="#navigator-guide" className="hover:text-red-700 transition-colors flex items-center gap-2 font-serif">
-            <span>🧭</span> Navigator's Guide
+          <a href="#faq" className="hover:text-red-700 transition-colors flex items-center gap-2 font-serif">
+            <span>🧭</span> FAQ
           </a>
         </div>
       </nav>
@@ -51,7 +54,7 @@ export default function Home() {
                       ⚓ october 2nd, 2025 ⚓
                     </div>
                     <div className="mt-4 text-blue-800 text-xl italic font-serif border-t-2 border-amber-700 pt-4 max-w-lg mx-auto">
-                      "here lies the greatest treasure..."
+                      by hack club's athena initiative
                     </div>
                     <div className="mt-2 text-cyan-700 text-sm font-serif">
                       ~ Mark well these coordinates of the greatest treasure ~
@@ -84,25 +87,54 @@ export default function Home() {
                     <div className="grid md:grid-cols-2 gap-6 text-left">
                       <div>
                         <h4 className="font-bold text-lg mb-2">📅 When:</h4>
-                        <p>Applications open year-round</p>
+                        <p>applications close september 31st, 2025</p>
                       </div>
                       <div>
                         <h4 className="font-bold text-lg mb-2">📍 Where:</h4>
-                        <p>Los Angeles, California</p>
+                        <p>SnapChat HQ in Los Angeles, California</p>
                       </div>
                       <div>
                         <h4 className="font-bold text-lg mb-2">💰 Cost:</h4>
-                        <p>Adventure packages available</p>
+                        <p>free! lunch is provided.</p>
                       </div>
                       <div>
                         <h4 className="font-bold text-lg mb-2">👥 Who:</h4>
-                        <p>All brave souls welcome</p>
+                        <p> all girls / non binary teenagers!</p>
                       </div>
                     </div>
                   </div>
                   <button className="bg-red-700 text-white px-8 py-4 rounded-lg font-bold text-xl hover:bg-red-800 transition-colors shadow-lg transform hover:scale-105">
                     ⚓ Register Now
                   </button>
+                </div>
+
+                <hr className="border-t-4 border-dashed border-amber-800 opacity-50 my-12" />
+
+                {/* --- The Guild Behind the Map --- */}
+                <div id="about-guild">
+                  <h2 className="text-4xl font-bold mb-6 text-amber-900 text-center">
+                    📜 The Guild Behind the Map
+                  </h2>
+                  <div className="bg-white bg-opacity-80 rounded-lg p-8 border-2 border-amber-600 mb-6 text-left space-y-6 max-w-4xl mx-auto">
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3 text-blue-800 font-serif">What is Hack Club?</h3>
+                      <p className="text-lg text-amber-900 leading-relaxed">
+                        Hack Club is a 501(c)3 nonprofit, supporting the largest network of highly technical teen hackers from around the world. <a href="https://hackclub.com" target="_blank" rel="noopener noreferrer" className="font-bold underline hover:text-red-700">Learn more about us here.</a>
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3 text-blue-800 font-serif">What is Athena?</h3>
+                      <p className="text-lg text-amber-900 leading-relaxed">
+                        Athena is Hack Club’s initiative to support girls learning to code. Working with local youth organizations, high school Hack Club leaders run one-day coding events that help girls and gender minorities write their first lines of code. They might build their first ever website, video game, application and even code a robot arm to draw!
+                      </p>
+                      <p className="text-lg text-amber-900 leading-relaxed mt-4">
+                        Built for beginners learning to code, girls are supported by experienced Hack Clubbers. By the end of the day, every single participant builds something with code. In 2023, Athena events were run in 6 cities, and in 2024 there were more than 10 cities.
+                      </p>
+                      <blockquote className="mt-4 border-l-4 border-amber-700 pl-4 italic text-amber-800">
+                        "There were two amazing aspects to this event: 1) Girls are being taught by other girls, and I believe that when girls see it, they can be it. 2) Most of the time our girls are learning foundational coding, but in this experience, we saw the girls taking an opportunity to incorporate their creative voice within their projects.”
+                      </blockquote>
+                    </div>
+                  </div>
                 </div>
 
                 <hr className="border-t-4 border-dashed border-amber-800 opacity-50 my-12" />
@@ -138,7 +170,7 @@ export default function Home() {
                 <hr className="border-t-4 border-dashed border-amber-800 opacity-50 my-12" />
 
                 {/* --- Navigator's Guide Content --- */}
-                <div id="navigator-guide" className="text-left">
+                <div id="faq" className="text-left">
                   <h2 className="text-4xl font-bold mb-6 text-green-900 text-center">
                     🧭 navigator's guide
                   </h2>
@@ -156,7 +188,7 @@ export default function Home() {
                     <div>
                       <h3 className="text-2xl font-bold mb-3 text-green-800 font-serif">Who can attend?</h3>
                       <p className="text-lg text-amber-900 leading-relaxed">
-                        Odyssey is open to all local individuals in Los Angeles excited to learn and build, no matter their experience level.
+                        Odyssey is open to all local girls / non binary teenagers in Los Angeles excited to learn and build, no matter their experience level.
                       </p>
                     </div>
                     <div>
